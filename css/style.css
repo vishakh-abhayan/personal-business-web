@@ -926,3 +926,69 @@ section {
 #testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #007bff;
 }
+
+/* Team Section
+--------------------------------*/
+#team {
+  background: #fff;
+  padding: 60px 0;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#team .member .member-info {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+#team .member .member-info-content {
+  margin-top: 50px;
+  transition: margin 0.2s;
+}
+#team .member:hover .member-info {
+  background: rgba(0, 62, 128, 0.7);
+  opacity: 1;
+  transition: 0.4s;
+}
+#team .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+#team .member .social {
+  margin-top: 15px;
+}
+#team .member .social a {
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.7);
+}
+#team .member .social a:hover {
+  color: #fff;
+}
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
